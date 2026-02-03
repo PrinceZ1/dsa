@@ -11,9 +11,6 @@ public class RotateArray {
      *
      * Time Complexity: O(n * k)
      * Space Complexity: O(1)
-     *
-     * Simple to understand but very inefficient
-     * when k is large.
      */
     public void rotateByOneRepeated(int[] arr, int k) {
         int n = arr.length;
@@ -36,8 +33,6 @@ public class RotateArray {
      *
      * Time Complexity: O(n)
      * Space Complexity: O(n)
-     *
-     * Faster but uses extra memory.
      */
     public void rotateUsingExtraArray(int[] arr, int k) {
         int n = arr.length;
@@ -62,9 +57,6 @@ public class RotateArray {
      *
      * Time Complexity: O(n)
      * Space Complexity: O(1)
-     *
-     * This is the optimal and most commonly
-     * expected solution in interviews.
      */
     public void rotateUsingReversal(int[] arr, int k) {
         int n = arr.length;

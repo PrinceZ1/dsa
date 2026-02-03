@@ -13,8 +13,6 @@ public class MissingNumber {
      *
      * Time Complexity: O(n^2)
      * Space Complexity: O(1)
-     *
-     * Simple but inefficient.
      */
     public int findMissingBruteForce(int[] arr, int n) {
         for (int i = 1; i <= n; i++) {
@@ -40,8 +38,6 @@ public class MissingNumber {
      *
      * Time Complexity: O(n)
      * Space Complexity: O(n)
-     *
-     * Faster but uses extra memory.
      */
     public int findMissingUsingSet(int[] arr, int n) {
         Set<Integer> set = new HashSet<>();
@@ -68,8 +64,6 @@ public class MissingNumber {
      *
      * Time Complexity: O(n)
      * Space Complexity: O(1)
-     *
-     * This is the most common interview solution.
      */
     public int findMissingUsingSum(int[] arr, int n) {
         int expectedSum = n * (n + 1) / 2;
@@ -93,8 +87,6 @@ public class MissingNumber {
      *
      * Time Complexity: O(n)
      * Space Complexity: O(1)
-     *
-     * Preferred when overflow is a concern.
      */
     public int findMissingUsingXor(int[] arr, int n) {
         int xorAll = 0;

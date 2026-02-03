@@ -11,9 +11,6 @@ public class TwoLargestElements {
      *
      * Time Complexity: O(n log n)
      * Space Complexity: O(1) (ignoring sorting space)
-     *
-     * This approach is simple but NOT optimal
-     * because sorting is unnecessary.
      */
     public int[] findTwoLargestBySorting(int[] arr) {
         Arrays.sort(arr);
@@ -28,9 +25,6 @@ public class TwoLargestElements {
      *
      * Time Complexity: O(n)
      * Space Complexity: O(1)
-     *
-     * This is better than sorting but still
-     * requires two passes.
      */
     public int[] findTwoLargestTwoPass(int[] arr) {
         int largest = Integer.MIN_VALUE;
@@ -64,9 +58,6 @@ public class TwoLargestElements {
      *
      * Time Complexity: O(n)
      * Space Complexity: O(1)
-     *
-     * This is the optimal solution and
-     * commonly expected in interviews.
      */
     public int[] findTwoLargestSinglePass(int[] arr) {
         int first = Integer.MIN_VALUE;
