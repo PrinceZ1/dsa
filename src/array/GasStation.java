@@ -26,7 +26,6 @@ public class GasStation {
         return totalGas >= 0 ? start : -1;
     }
 
-    // Main method để test
     public static void main(String[] args) {
         int[] gas = {1, 2, 3, 4, 5};
         int[] cost = {3, 4, 5, 1, 2};
