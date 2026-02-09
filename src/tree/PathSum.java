@@ -49,7 +49,7 @@ public class PathSum {
         root.right.right.right = new TreeNode(1);
 
         System.out.println(hasPathSum(root, 22)); // true
-        System.out.println(hasPathSum(root, 26)); // true (5 -> 8 -> 13)
-        System.out.println(hasPathSum(root, 18)); // false
+        System.out.println(hasPathSum(root, 26)); // true
+        System.out.println(hasPathSum(root, 19)); // false
     }
 }
